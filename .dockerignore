@@ -1,0 +1,75 @@
+# ============ SOURCE CONTROL ============
+.git
+.gitignore
+.github
+
+# ============ DEVELOPMENT ============
+.vscode
+.vscode/
+.idea
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ============ PYTHON CACHE ============
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ============ ENVIRONMENT & CONFIG ============
+.env
+.env.local
+.env.*.local
+.venv
+venv/
+env/
+
+# ============ CREDENTIALS & SECRETS ============
+# AWS and cloud credentials
+.aws
+aws_creds/
+*creds/
+secrets/
+*.pem
+*.key
+*credentials*
+
+# ============ MODELS & LARGE FILES ============
+# Training artifacts (but keep fastapi_app/models for baked model)
+ml-models/
+*.pkl
+*.pth
+*.pt
+*.ckpt*
+huggingface/
+
+# ============ TESTING & LOGS ============
+logs/
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# ============ DOCUMENTATION & CONFIG ============
+README.md
+docs/
+*.md
+LICENSE
+Dockerfile*
+compose*.yml
+compose*.yaml
+
+# ============ PROJECT-SPECIFIC ============
+.ipynb_checkpoints
+runs/
+outputs/
+temp/
+tmp/
