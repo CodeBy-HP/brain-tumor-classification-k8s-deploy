@@ -1,0 +1,1 @@
+# FineTuned Vision Transformer for Brain Tumor Classification and planned to deploy on k8s with AWS EKS service
