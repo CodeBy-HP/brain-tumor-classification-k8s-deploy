@@ -41,14 +41,6 @@ secrets/
 *.key
 *credentials*
 
-# ============ MODELS & LARGE FILES ============
-# Training artifacts (but keep fastapi_app/models for baked model)
-ml-models/
-*.pkl
-*.pth
-*.pt
-*.ckpt*
-huggingface/
 
 # ============ TESTING & LOGS ============
 logs/
