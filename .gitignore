@@ -84,4 +84,7 @@ tmp/
 
 # Docker
 docker-compose.override.yml
+concepts.md 
+diagram.md 
+scripts.md 
 
