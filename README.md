@@ -24,7 +24,8 @@ A production-ready REST API for brain tumor classification using a **fine-tuned 
 ## 🌈 Application UI
 
 <div align="center">
-<img width="493" height="858" alt="Application Interface" src="[PLACEHOLDER: Add your application screenshot]" />
+<img width="1893" height="901" alt="Screenshot 2026-01-06 164504" src="https://github.com/user-attachments/assets/5dd2fcdd-6bee-4956-bb13-a9106a21ec70" />
+<img width="1897" height="906" alt="Screenshot 2026-01-06 164446" src="https://github.com/user-attachments/assets/40f45ff5-19b3-487d-bdbd-9848d4c76fd6" />
 </div>
 
 ---
@@ -32,25 +33,26 @@ A production-ready REST API for brain tumor classification using a **fine-tuned 
 ## 🌈 Video Demo
 
 <p align="center">
-  <a href="[PLACEHOLDER: Add your video link]" target="_blank">
+  <a href="https://www.youtube.com/watch?v=NLoObiGl6h8" target="_blank">
     <img 
-      src="[PLACEHOLDER: Add video thumbnail]"
+      src="https://img.youtube.com/vi/NLoObiGl6h8/maxresdefault.jpg"
       alt="Watch Demo"
       width="700"
     />
   </a>
 </p>
-
 <p align="center"><b>▶️ Click to watch Kubernetes deployment & API demo</b></p>
 
 ---
 
-## 🌈 Architecture Diagrams
+## 🌈 Architecture & Workflow Diagrams
 
 <div align="center">
+<img width="1404" height="733" alt="Screenshot 2026-01-06 173121" src="https://github.com/user-attachments/assets/08ebb582-da7e-4f39-adb3-84c83cdef1fd" />
+<img width="748" height="855" alt="Screenshot 2026-01-06 173155" src="https://github.com/user-attachments/assets/a368a89d-62cc-4f39-8cdb-77dd9ffb2832" />
 
-<img width="817" height="1056" alt="Kubernetes Architecture" src="[PLACEHOLDER: Add Kubernetes architecture diagram]" />
-<img width="880" height="515" alt="Deployment Pipeline" src="[PLACEHOLDER: Add deployment pipeline diagram]" />
+<img width="709" height="850" alt="Screenshot 2026-01-06 173131" src="https://github.com/user-attachments/assets/ba205c18-1b5a-4e61-8669-6f1a7638be40" />
+
 
 </div>
 
