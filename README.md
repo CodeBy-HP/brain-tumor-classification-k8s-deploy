@@ -35,13 +35,15 @@ A production-ready REST API for brain tumor classification using a **fine-tuned 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=NLoObiGl6h8" target="_blank">
     <img 
-      src="https://img.youtube.com/vi/NLoObiGl6h8/maxresdefault.jpg"
+      src="https://img.youtube.com/vi/NLoObiGl6h8/hqdefault.jpg"
       alt="Watch Demo"
       width="700"
     />
   </a>
 </p>
+
 <p align="center"><b>▶️ Click to watch Kubernetes deployment & API demo</b></p>
+
 
 ---
 
