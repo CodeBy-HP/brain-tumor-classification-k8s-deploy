@@ -11,6 +11,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY fastapi_app .
 
+RUN python -c "from transformers import ViTImageProcessor, ViTForImageClassification; \
+    ViTImageProcessor.from_pretrained('codeby-hp/vit-brain-tumor-classifier', cache_dir='/app/models/vit-brain-tumor-classifier'); \
+    ViTForImageClassification.from_pretrained('codeby-hp/vit-brain-tumor-classifier', cache_dir='/app/models/vit-brain-tumor-classifier')"
+
 RUN useradd -m -u 1000 appuser && chown -R appuser:appuser /app
 USER appuser
 
