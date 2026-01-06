@@ -1,6 +1,6 @@
 from transformers import ViTImageProcessor, ViTForImageClassification
 from PIL import Image
-from pathlib import Path
+import os
 import torch
 from .logging import get_logger
 
@@ -10,23 +10,24 @@ logger = get_logger(__name__)
 class ViTBrainTumorClassifier:
     CLASS_LABELS = {0: "Glioma", 1: "Meningioma", 2: "No Tumor", 3: "Pituitary"}
     
-    def __init__(self, device: str = "cpu"):
+    def __init__(self, device: str = "cpu", model_name: str = "codeby-hp/vit-brain-tumor-classifier"):
         self.device = device
-        self.model_dir = Path(__file__).parent.parent / "models" / "vit-brain-tumor-classifier"
+        self.model_name = model_name
         self.model = None
         self.processor = None
         self._load_model()
     
     def _load_model(self):
         try:
-            logger.info(f"Loading model from: {self.model_dir}")
+            logger.info(f"Downloading model from HuggingFace Hub: {self.model_name}")
             
-            self.processor = ViTImageProcessor.from_pretrained(str(self.model_dir))
-            self.model = ViTForImageClassification.from_pretrained(str(self.model_dir))
+            # Download from HuggingFace Hub
+            self.processor = ViTImageProcessor.from_pretrained(self.model_name)
+            self.model = ViTForImageClassification.from_pretrained(self.model_name)
             self.model.to(self.device)
             self.model.eval()
             
-            logger.info(f"Model loaded on {self.device}")
+            logger.info(f"Model loaded successfully on {self.device}")
         except Exception as e:
             logger.error(f"Model loading failed: {e}")
             raise
